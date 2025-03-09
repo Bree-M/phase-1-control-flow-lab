@@ -1,5 +1,5 @@
 // Function to return appropriate response based on distance traveled
-function scuberGreetingForFeet(distance) {
+function scuberGreetingForFeet(199) {
   if (distance <= 400) {
     return "This one is on me!";
   } else if (distance > 400 && distance <= 2000) {
