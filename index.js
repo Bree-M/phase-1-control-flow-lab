@@ -1,11 +1,29 @@
-console.log(scuberGreetingForFeet(199));   // "This one is on me!"
-console.log(scuberGreetingForFeet(1500));  // "That will be twenty bucks."
-console.log(scuberGreetingForFeet(2200));  // "I will gladly take your thirty bucks."
-console.log(scuberGreetingForFeet(2700));  // "No can do."
+// Function to return appropriate response based on distance traveled
+function scuberGreetingForFeet(distance) {
+  if (distance <= 400) {
+    return "This one is on me!";
+  } else if (distance > 400 && distance <= 2000) {
+    return "That will be twenty bucks.";
+  } else if (distance > 2000 && distance <= 2500) {
+    return "I will gladly take your thirty bucks.";
+  } else {
+    return "No can do.";
+  }
+}
 
-console.log(ternaryCheckCity("NYC"));  // "Ok, sounds good."
-console.log(ternaryCheckCity("LA"));   // "No go."
+// Function to check if city is NYC using a ternary operator
+function ternaryCheckCity(city) {
+  return city === "NYC" ? "Ok, sounds good." : "No go.";
+}
 
-console.log(switchOnCharmFromTip("generous"));       // "Thank you so much."
-console.log(switchOnCharmFromTip("not as generous"));// "Thank you."
-console.log(switchOnCharmFromTip("cheap"));//"Bye."
+// Function to return response based on tip amount using a switch statement
+function switchOnCharmFromTip(tip) {
+  switch (tip) {
+    case "generous":
+      return "Thank you so much.";
+    case "not as generous":
+      return "Thank you.";
+    default:
+      return "Bye.";
+  }
+}
