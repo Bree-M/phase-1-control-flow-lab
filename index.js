@@ -11,8 +11,9 @@
   }
 
 
-`function ternaryCheckCity(NYC) {
-  return "NYC" ? "Ok, sounds good.":`
+function ternaryCheckCity(NYC) {
+  return "NYC" ? "Ok, sounds good.":
+}
 
   function ternaryCheckCity(Pittsburgh) {
     return "  No go.";
