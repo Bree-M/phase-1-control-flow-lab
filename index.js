@@ -1,5 +1,5 @@
 
-`function scuberGreetingForFeet(distance) `
+function scuberGreetingForFeet(distance) {
   if (distance <= 400) {
     return "This one is on me!";
   } else if (distance > 400 && distance <= 2000) {
@@ -9,6 +9,7 @@
   }else if (distance > 2500){
     return "No can do.";
   }
+}
 
 
 function ternaryCheckCity(NYC) {
